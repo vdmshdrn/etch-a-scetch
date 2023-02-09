@@ -8,3 +8,7 @@ function createGrid(divs) {
     }
 }
 createGrid(256);
+
+container.addEventListener('mousemove', function (event) {
+    console.log(event.target);
+    });
