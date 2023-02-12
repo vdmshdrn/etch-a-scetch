@@ -2,6 +2,8 @@
 const container = document.querySelector('.container');
 const grid = document.querySelectorAll('.grid');
 let color = 'black';
+const reset = document.querySelector('.reset');
+reset.addEventListener('click', () => location.reload());
 
 let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true);
