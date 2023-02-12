@@ -12,7 +12,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
+    border: 1px solid black;
     width: 480px;
     height: 480px;
     text-align: center;
@@ -20,17 +20,14 @@ body {
 
 }
 
-.container div {
-    border: 1px solid black;
-    width: 30px;
-    height: 30px;
-}
+
 
 .colored_grid {
     background-color: black;
 }
 
 .buttons {
+    width: 480px;
     display: flex;
     justify-content: space-around;
     margin: 10px;
