@@ -13,12 +13,15 @@
 <body>
     <div class="header">
         <h1>ETCH-A-SCETCH</h1>
-
-        <div class="form">
-            <p>New grid size:</p>
-            <input type="text" class="user-input">
-            <button class="user-sabmit">Submit</button>
-        </div>
+        <p>Choose grid size</p>
+        <form>
+            <input type="radio" name="size" value="16" id="16" checked>
+            <label for="16">16</label>
+            <input type="radio" name="size" value="32" id="32">
+            <label for="32">32</label>
+            <input type="radio" name="size" value="64" id="64">
+            <label for="64">64</label>
+        </form>
     </div>
     <div class="container">
 
