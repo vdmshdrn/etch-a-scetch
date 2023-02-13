@@ -1,13 +1,38 @@
 "use strict";
+
+let size = 16;
 const container = document.querySelector('.container');
 const grid = document.querySelectorAll('.grid');
+
+let userSize = document.querySelector('#select');
+userSize.addEventListener('click', function () {
+    size = getSize();
+});
 let color = 'black';
+
 const reset = document.querySelector('.reset');
 reset.addEventListener('click', () => location.reload());
 
 let mouseDown = false;
 document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
+createGrid(size);
+
+
+function getSize() {
+    let input = prompt('Choose a grid size');
+    let showMsg = document.querySelector('#userInput');
+    if (input == '') {
+        showMsg.textContent = 'Please input a number';
+    } else if (input < 0 || input > 100) {
+        showMsg.textContent = 'Input must be number beetween 1 and 100';
+    } else {
+        showMsg.textContent = 'Go!';
+        createGrid(input);
+
+    }
+}
+
 
 function createGrid(size) {
 
@@ -21,7 +46,7 @@ function createGrid(size) {
         cells.addEventListener('mousedown', coloredDiv);
     }
 }
-createGrid(16);
+
 
 function getColor(choiseColor) {
 
