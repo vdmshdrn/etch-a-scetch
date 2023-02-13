@@ -13,17 +13,19 @@
 <body>
     <div class="header">
         <h1>ETCH-A-SCETCH</h1>
-        <p>Choose grid size</p>
-        <button id="select">Select</button>
+        <div class="grid_size">
+            <p>Choose grid size</p>
+            <button id="select">Select</button>
+        </div>
         <p id="userInput"></p>
     </div>
     <div class="container">
 
     </div>
     <div class="buttons">
-        <button onclick='getColor("black")'>Black</button>
-        <button onclick='getColor("red")'>Red</button>
-        <button onclick='getColor("random")'>Random</button>
+        <button id="black" onclick='getColor("black")'id="black">Black</button>
+        <button id="red" onclick='getColor("red")'>Red</button>
+        <button id="random" onclick='getColor("random")'>Random</button>
         <button class="reset">Reset</button>
     </div>
 </body>

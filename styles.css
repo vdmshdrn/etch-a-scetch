@@ -20,7 +20,18 @@ body {
 
 }
 
-
+.grid_size {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.grid_size button {
+    height: 40px;
+    width: 80px;
+    background-color: #EA8538;
+    color: bisque;
+}
 
 .colored_grid {
     background-color: black;
@@ -31,11 +42,30 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 10px;
+    padding: 10px 20px;
 
 }
+
 .form {
     display: flex;
 }
+
 .user-input {
     width: 50px;
+}
+#red {
+    background-color: #F22804;
+    color: bisque;
+}
+#black {
+    background-color: black;
+    color: blanchedalmond;
+}
+#random {
+    background-color: #5B8466;
+    color: blanchedalmond;
+}
+.reset {
+    background-color: red;
+    color: white;
 }
